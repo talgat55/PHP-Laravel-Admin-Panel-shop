@@ -28,8 +28,8 @@ Route::group(['prefix' => 'admin'], function () {
 
     // Shop Transactions Routes
     Route::resource('customers', 'Transactions/CustomersController');
-    Route::resource('orders', 'ShopTransactions/OrdersController');
-    Route::resource('product-sales', 'ShopTransactions/ProductSalesController');
+    Route::resource('orders', 'Transactions/OrdersController');
+    Route::resource('product-sales', 'Transactions/ProductSalesController');
 
     //Frontend Data Entry Routes
     Route::resource('blog-posts', 'FrontendDataEntry/BlogPostsController');
